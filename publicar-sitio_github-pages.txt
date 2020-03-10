@@ -1,0 +1,42 @@
+
+
+   > Para el sitio de la organización (no lo veremos)
+
+   > Para cada repositorio
+
+     1.- Ir a https://github.com/ y crearnos una cuenta
+      1.1- Instalar Git - https://git-scm.com/
+           >> Windows, opción A - https://git-scm.com/download/win
+           >> Windows, opción B - Windows https://gitforwindows.org/
+
+      :: Configuración inicial :: 
+      The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+      $ git config --global user.name "John Doe"
+      $ git config --global user.email johndoe@example.com
+
+      Revisar todo: git config --list
+
+     2.- En Github crear un nuevo repositorio (setearlo como PÚBLICO)
+         > nombre-repositorio         
+
+     3.- De local, en la carpeta del proyecto, crear carpeta DOCS, y allí dentro ponemos la web
+
+     4.- Abrir la consola de Git e iniciar repositorio en carpeta root (raíz del proyecto)
+      4.1- git init
+      4.2- git status
+      4.3- git add .
+      4.5- git commit -m "Primer commit"
+           >> Con los commit guardamos los cambios en el repositorio
+           
+      4.6- Copiar y pegar los dos comandos (primero uno, luego el otro) que figuran en el repositorio creado en Github.com donde dice: "... or push an existing repository".
+
+        $ git remote add origin master URL
+        $ git push -u origin master
+
+      5.- Ver que ahora en el repositorio aparecen los archivos
+      6.- Ir a configuración; hacer scroll y ver donde dice GitHub Pages
+          > Allí donde dice None elegir la carpeta DOCS 
+          > Guardar y bajar de nuevo para ver ahora la URL del sitio
+
+LISTO! Nuestros proyecto está online!
